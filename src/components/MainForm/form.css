@@ -12,6 +12,12 @@
     height: 100vh;
 }
 
+.main__page_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main__page_title > h1 {
     margin-top: 150px;
     font-weight: 600;
@@ -111,4 +117,102 @@
     color: #00BA2C;
 
     margin-top: 50px;
+}
+
+@media (max-width: 391px) {
+    .main__page_title > h1 {
+        margin-top: 150px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 300px;
+    }
+
+    .main__page_title > h2 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 40px;
+        width: 300px;
+    }
+
+    .senddata__main_form > h2 {
+        width: 300px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .senddata__main_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .senddata__main_form > input {
+        width: 300px;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .senddata__main_form > .error {
+        font-size: 12px;
+    }
+
+    .senddata__main_form > button {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 412px) {
+    .main__page_title > h1 {
+        margin-top: 150px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 300px;
+    }
+
+    .main__page_title > h2 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 40px;
+        width: 300px;
+    }
+
+    .senddata__main_form > h2 {
+        width: 300px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 40px;
+    }
+
+    .senddata__main_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .senddata__main_form > input {
+        width: 300px;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .senddata__main_form > .error {
+        font-size: 12px;
+    }
+
+    .senddata__main_form > button {
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 18px;
+    }
 }
