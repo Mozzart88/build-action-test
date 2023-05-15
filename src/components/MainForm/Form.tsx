@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 import './form.css'
+import { Helmet } from 'react-helmet'
 
 const Form = () => {
     const [email, setEmail] = useState('')
@@ -71,8 +72,19 @@ const Form = () => {
 
   return (
     <div className='main__page'>
+        <Helmet>
+            <title>Готовые интеграции в конструкторе DiliApi. Связывайте сервисы и автоматизируйте процессы.</title>
+            <meta
+                name='description'
+                content='Автоматизация доступная каждому. Создавайте интеграции с готовыми шаблонами и связывайте сервисы в конструкторе DiliApi.'
+            />
+            <meta
+                name='keywords'
+                content='интеграции, авоматизация, автоматизаруйте'
+            />
+        </Helmet>
         <div className='main__page_title'>
-            <h1>Конструктор интеграций от LEADTEX</h1>
+            <h1>Создавайте и автоматизируйте любые интеграции с конструктором DiliApi.</h1>
             <h2>Скоро запуск. Следи за проектом.</h2>
         </div>
         <div className='main__page_form'>

@@ -5,7 +5,6 @@ import Form from './components/MainForm/Form';
 import SuccessForm from './components/SuccessForm/SuccessForm';
 import ErrorPage from './components/Error/ErrorPage';
 
-
 function App() {
   return (
     <BrowserRouter>

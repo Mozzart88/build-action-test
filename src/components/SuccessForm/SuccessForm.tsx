@@ -2,13 +2,17 @@ import React from 'react'
 import accept from '../../assets/accept.svg'
 
 import './success.css'
+import { Helmet } from 'react-helmet'
 
 const SuccessForm = () => {
 
   return (
     <div className='success__page'>
+      <Helmet>
+        <title>Спасибо за ваш интерес!</title>
+      </Helmet>
         <div className='success__page_title'>
-            <h1>Конструктор интеграций от LEADTEX</h1>
+            <h1>Создавайте и автоматизируйте любые интеграции с конструктором DiliApi.</h1>
             <h2>Скоро запуск. Следи за проектом.</h2>
         </div>
         <div className='success_info'>

@@ -1,11 +1,15 @@
 import React from 'react'
 import './error.css'
+import { Helmet } from 'react-helmet'
 
 const ErrorPage = () => {
   return (
     <div className='error__page'>
+      <Helmet>
+        <title>Что-то пошло не так</title>
+      </Helmet>
         <div className='error__page_title'>
-            <h1>Конструктор интеграций от LEADTEX</h1>
+            <h1>Создавайте и автоматизируйте любые интеграции с конструктором DiliApi.</h1>
             <h2>Скоро запуск. Следи за проектом.</h2>
         </div>
         <div className='error_info'>
