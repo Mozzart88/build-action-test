@@ -4,6 +4,7 @@ import axios from 'axios'
 
 import './form.css'
 import { Helmet } from 'react-helmet'
+import Logo from '../../assets/logo.svg'
 
 const Form = () => {
     const [email, setEmail] = useState('')
@@ -83,6 +84,9 @@ const Form = () => {
                 content='интеграции, авоматизация, автоматизаруйте'
             />
         </Helmet>
+        <div className="logo">
+            <img src={Logo} alt="logo" />
+        </div>
         <div className='main__page_title'>
             <h1>Создавайте и автоматизируйте любые интеграции с конструктором DiliApi.</h1>
             <h2>Скоро запуск. Следи за проектом.</h2>
@@ -90,7 +94,8 @@ const Form = () => {
         <div className='main__page_form'>
             <form className='senddata__main_form'>
                 <h2>Хочешь тестировать сервис в числе первых?</h2>
-                <input 
+                <input
+                className='email'
                     type="email" 
                     placeholder='Email' 
                     value={email} 
@@ -100,7 +105,8 @@ const Form = () => {
                 />
                 {(emailDirty && emailError) && <div className='error'>{ emailError }</div>}
                 {/* {(usernameDirty && usernameError) && <div className='error'>{ usernameError }</div>} */}
-                <input 
+                <input
+                    className='username'
                     type="text" 
                     placeholder='Username Telegram' 
                     value={username} 

@@ -1,6 +1,7 @@
 import React from 'react'
 import './error.css'
 import { Helmet } from 'react-helmet'
+import Logo from '../../assets/logo.svg'
 
 const ErrorPage = () => {
   return (
@@ -8,6 +9,9 @@ const ErrorPage = () => {
       <Helmet>
         <title>Что-то пошло не так</title>
       </Helmet>
+        <div className="error_logo">
+          <img src={Logo} alt="logo" />
+        </div>
         <div className='error__page_title'>
             <h1>Создавайте и автоматизируйте любые интеграции с конструктором DiliApi.</h1>
             <h2>Скоро запуск. Следи за проектом.</h2>

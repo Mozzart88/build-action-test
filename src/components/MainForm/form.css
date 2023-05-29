@@ -4,70 +4,81 @@
     justify-content: center;
     align-items: center;
 
-    background: url('../../assets/bcg.png');
+    background: url('../../assets/bcg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     width: 100%;
     height: 100vh;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.logo img {
+    width: calc(10.4vw + 121px);
 }
 
 .main__page_title {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-top: calc(2.6vh + 30.3px);
 }
 
 .main__page_title > h1 {
-    margin-top: 150px;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 59px;
+    font-size: calc(1.55vw + 18px);
+    line-height: calc(2vw + 22px);
 
     text-align: center;
 
     color: #FFFFFF;
 
-    width: 1320px;
+    width: calc(68vw + 18px);
 }
 
 .main__page_title > h2 {
-    padding-top: 30px;
+    padding-top: calc(1.04vh + 20px);
     font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: calc(1.16vw + 9.63px);
+    line-height: calc(1.42vw + 11.7px);
 
     text-align: center;
     text-transform: uppercase;
 
     color: #BABABA;
+
+    width: calc(82.4vw + 18px);
 }
 
 .senddata__main_form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .senddata__main_form > h2 {
-    width: 432px;
-    margin-top: 40px;
+    width: calc(6.8vw + 301.5px);
+    margin-top: calc(2.59vh + 30.3px);
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: calc(0.52vw + 14px);
+    line-height: calc(0.65vw + 16.6px);
 
-    padding-bottom: 15px;
+    padding-bottom: 24px;
 
     text-align: center;
     
     color: #DEDEDE;
 }
 
-.senddata__main_form > input {
-    width: 432px;
-    padding: 19px 16px;
+.senddata__main_form > .email {
+    padding: 18px 16px;
     padding-left: 16px;
 
-    margin-top: 24px;
     outline: none;
     background: #1C1C1C;
 
@@ -79,18 +90,49 @@
     line-height: 20px;
 
     color: #9C9C9C;
+
+    width: calc(6.8vw + 301.5px);
+}
+
+.email:focus {
+    border: 1px solid #009514;
+}
+
+.senddata__main_form > .username {
+    padding: 18px 16px;
+    padding-left: 16px;
+
+    outline: none;
+    background: #1C1C1C;
+
+    border: 1px solid #404040;
+    border-radius: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #9C9C9C;
+
+    margin-top: calc(0.52vh + 14px);
+
+    width: calc(6.8vw + 301.5px);
+}
+
+.username:focus {
+    border: 1px solid #009514;
 }
 
 .senddata__main_form > button {
     cursor: pointer;
-    width: 432px;
-    padding: 19px 16px;
+    padding: 18px 16px;
     background: #00BA2C;
     border: none;
     border-radius: 16px;
 
-    margin-top: 20px;
+    margin-top: calc(1.04vh + 20px);
 
+    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
@@ -98,6 +140,8 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    width: calc(6.8vw + 301.5px);
 }
 
 .senddata__main_form > .error {
@@ -109,112 +153,93 @@
     padding-top: 3px;
 
     margin-left: 20px;
+
+    text-align: left;
 }
 
 .footer {
     font-weight: 500;
-    font-size: 24px;
+    font-size: calc(0.65vw + 11.6px);
     line-height: 29px;
 
     color: #00BA2C;
 
-    margin-top: 50px;
+    margin-top: calc(2.6vh + 30.3px);
+    margin-bottom: calc(5.2vh + 21px);
 }
 
-@media (max-width: 390px) {
-    .main__page_title > h1 {
-        margin-top: 200px;
-        font-size: 28px;
-        line-height: 30px;
-        width: 300px;
+@media (max-width: 376px) {
+    .main__page {
+        background: #252525;
     }
 
-    .main__page_title > h2 {
-        font-size: 18px;
-        line-height: 30px;
-        padding-top: 20px;
-        width: 300px;
+    .logo {
+        margin-top: 0;
     }
 
-    .senddata__main_form > h2 {
-        width: 300px;
-        font-size: 18px;
-        line-height: 30px;
+    .main__page_title {
         margin-top: 40px;
     }
 
+    .main__page_title > h1 {
+        font-size: 25px;
+        line-height: calc(2vw + 22px);
+        width: calc(82.4vw + 18px);
+    }
+
+    .main__page_title h2 {
+        padding-top: 24px;
+    }
+
     .senddata__main_form {
         display: flex;
-        flex-direction: column;
         align-items: center;
-    }
-
-    .senddata__main_form > input {
-        width: 300px;
-        font-size: 14px;
-        margin-top: 16px;
-    }
-
-    .senddata__main_form > .error {
-        font-size: 12px;
-    }
-
-    .senddata__main_form > button {
-        width: 300px;
-        font-size: 14px;
-    }
-
-    .footer {
-        margin-top: 30px;
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 412px) {
-    .main__page_title > h1 {
-        margin-top: 150px;
-        font-size: 28px;
-        line-height: 40px;
-        width: 300px;
-    }
-
-    .main__page_title > h2 {
-        font-size: 18px;
-        line-height: 30px;
-        padding-top: 20px;
-        width: 300px;
     }
 
     .senddata__main_form > h2 {
-        width: 300px;
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 20px;
+        padding-top: calc(1.04vh + 20px);
+        font-size: 16px;
+        line-height: calc(1.42vw + 11.7px);
+        margin: 0;
+        width: 250px;
     }
 
-    .senddata__main_form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .senddata__main_form > input {
-        width: 300px;
+    .senddata__main_form > .email {
         font-size: 14px;
         margin-top: 16px;
+
+        padding: 14px 16px;
+
+        width: 327px;
+
+        margin: 0;
+    }
+
+    .senddata__main_form > .username {
+        font-size: 14px;
+        margin-top: 16px;
+
+        padding: 14px 16px;
+
+        width: 327px;
     }
 
     .senddata__main_form > .error {
         font-size: 12px;
+        margin: 0;
+        padding-left: 16px;
     }
 
     .senddata__main_form > button {
-        width: 300px;
-        font-size: 14px;
+        padding: 14px 16px;
+        margin-top: 24px;
+
+        width: 327px;
     }
 
     .footer {
-        margin-top: 30px;
-        font-size: 18px;
+        margin-top: 40px;
+        font-size: calc(0.65vw + 11.6px);
+        margin-bottom: 0;
     }
 }
